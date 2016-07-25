@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html ng-app="calculator">
+  <head>
+    <meta charset="utf-8">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./reset.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="./main.css" media="screen" title="no title" charset="utf-8">
+  </head>
+  <body ng-controller="mainCtrl">
+
+    <h1>Calculator!</h1>
+
+    <input ng-model="a" />
+    <input ng-model="b" />
+
+    Answer:
+    <button ng-click="sum(a, b)">{{answer}}<span ng-if="!answer">answer</span></button>
+
+    <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular.js" charset="utf-8"></script>
+    <script src="js/mainCtrl.js" charset="utf-8"></script>
+  </body>
+</html>
